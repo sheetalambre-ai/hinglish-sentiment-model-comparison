@@ -6,6 +6,8 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
+from preprocessing import clean_text
+
 
 MODEL_PATH = "./results/best_model.keras"
 TOKENIZER_PATH = "./results/tokenizer.json"
@@ -58,13 +60,13 @@ with open(
 def predict_sentiment(text):
 
     sequence = tokenizer.texts_to_sequences(
-        [text]
+        [clean_text(text)]
     )
 
     padded = pad_sequences(
         sequence,
         maxlen=MAX_SEQ_LEN,
-        padding="post",
+        padding="pre",
         truncating="post"
     )
 
