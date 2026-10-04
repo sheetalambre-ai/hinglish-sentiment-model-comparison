@@ -1,0 +1,4 @@
+Architecture,Acc_All_mean,Acc_All_std,MacroF1_All_mean,MacroF1_All_std,Acc_Leaked_mean,Acc_Leaked_std,MacroF1_Leaked_mean,MacroF1_Leaked_std,Acc_Clean_mean,Acc_Clean_std,MacroF1_Clean_mean,MacroF1_Clean_std,Acc_NearDedup_mean,Acc_NearDedup_std
+Simple LSTM,0.9684,0.004,0.9621,0.0048,0.9868,0.0119,0.9854,0.0129,0.9549,0.0028,0.9396,0.003,0.8783,0.0058
+Stacked BiLSTM,0.9689,0.0016,0.9629,0.0024,0.9945,0.0038,0.9941,0.0038,0.9501,0.0028,0.9331,0.0055,0.8827,0.0072
+CNN + BiLSTM,0.9656,0.004,0.9595,0.0055,0.9868,0.0057,0.9854,0.0066,0.9501,0.0028,0.9345,0.0062,0.8904,0.0115
